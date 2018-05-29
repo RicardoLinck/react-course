@@ -14,10 +14,7 @@ var About = React.createClass({
         willTransitionFrom: function(transition, component){
             if(!confirm('Are you sure you want to leave this page?')){
                 transition.abort();
-            } else {
-                component();
             }
-            
         },
     },
     render: function(){
